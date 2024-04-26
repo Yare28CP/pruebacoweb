@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iniciar Sesión</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .login-container {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                text-align: center; /* Centrar contenido */
+            }
+            .login-container img {
+                max-width: 100px; /* Tamaño máximo del logo */
+                margin-bottom: 20px; /* Espacio inferior */
+            }
+            input[type="text"],
+            input[type="password"] {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            input[type="submit"] {
+                background-color: rgb(76, 168, 175);
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover {
+                background-color: #4592a0;
+            }
+            label {
+                display: block;
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="login-container">
+            <img alt="cotoweb logo" width="180" height="" src="img/logo.png" alt="logo cotoweb">
+            <h2>Iniciar Sesión</h2>
+            <form action="autenticacion.php" method="post">
+                <label for="correo">Usuario:</label>
+                <input type="text" id="correo" name="correo" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                <input type="submit" value="Entrar">
+            </form>
+        </div>
+    </body>
+    </html>
